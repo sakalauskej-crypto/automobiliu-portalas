@@ -10,6 +10,7 @@ carForm.addEventListener("submit", function(event) {
     const price = document.getElementById("price").value;
     const image = document.getElementById("image").value;
     const fuel = document.getElementById("fuel").value;
+    const year = document.getElementById("year").value;
 
     //  sukuriu automobilio kortele
     const carCard = document.createElement("div");
@@ -21,6 +22,7 @@ carForm.addEventListener("submit", function(event) {
     <h3> ${name}</h3>
     <p> Automobilio kaina: ${price}</p>
     <p>Automobilio kuras: ${fuel} </p>
+    <p> Automobilio pagaminimo metai: ${year} </p>
 `;
 carsDiv.appendChild(carCard);
 
