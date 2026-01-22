@@ -21,9 +21,21 @@ carForm.addEventListener("submit", function(event) {
         return; 
     }
 
-    if (price.length >= 0) {
+    if (price.length <= 0) {
         alert ("Klaida: per maza kaina");
         return;
+    }
+
+    if (fuel === "Benzinas") {
+        carCard.classList.add("benzinas");
+    }
+
+    if (fuel === "dyzelinas") {
+        carCard.classList.add("dyzelinas");
+    }
+
+    if (fuel === "Elektra") {
+        carCard.classList.add("elektra");
     }
 
 // papildau kortele informacija

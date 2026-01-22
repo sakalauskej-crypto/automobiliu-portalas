@@ -29,3 +29,15 @@
     width: 100%;
     margin-bottom: 10px;
   }
+
+  .benzinas {
+    background-color: #4b8b5a;
+  }
+
+  .dyzelinas {
+    background-color: grey;
+  }
+
+  .elektra {
+    background-color: rgb(92, 92, 233);
+  }
