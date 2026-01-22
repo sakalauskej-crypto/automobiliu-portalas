@@ -16,6 +16,16 @@ carForm.addEventListener("submit", function(event) {
     const carCard = document.createElement("div");
     carCard.className = "car-card";
 
+    if (name.length < 3) {
+        alert("Klaida: Automobilio pavadinimas turi būti ne trumpesnis nei 3 simboliai!");
+        return; 
+    }
+
+    if (price.length >= 0) {
+        alert ("Klaida: per maza kaina");
+        return;
+    }
+
 // papildau kortele informacija
     carCard.innerHTML = `
     <img src= ${image} alt="car">
@@ -23,7 +33,7 @@ carForm.addEventListener("submit", function(event) {
     <p> Automobilio kaina: ${price}</p>
     <p>Automobilio kuras: ${fuel} </p>
     <p> Automobilio pagaminimo metai: ${year} </p>
-    <button class="delete-btn">Ištrinti</button>
+    <button class="delete-btn">Istrinti</button>
 `;
 
 const deleteBtn = carCard.querySelector(".delete-btn");
