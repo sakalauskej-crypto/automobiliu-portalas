@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="./script.js" defer ></script>
 </head>
 <body>
-    
+    <div class="container">
+        <form id="carForm">
+            <input id="name" type="text" placeholder="Automobilio pavadinimas" required />
+            <input id="description" type="text" placeholder="Trumpas aprasymas" required />
+            <input id="price" type="number" placeholder="kaina" required />
+
+            <selesct id="fuel">
+                <option value="benzinas">Benzinas</option>
+                <option value="dyzelinas">Dyzelinas</option>
+                <option value="Elektra">Elektra</option>
+                <option value="Hibridas">Hibridas</option>
+            </selesct>
+            <button type="submit"> prideti </button>
+        </form>
+        <div id="cars"></div>
+    </div>
 </body>
 </html>
